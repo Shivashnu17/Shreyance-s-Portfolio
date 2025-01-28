@@ -1,0 +1,18 @@
+body
+{
+    background-color: rgb(198, 196, 196);
+    color: black;
+}
+
+.nr-pic-cont
+{
+    background-image: url(./imgs/Project-3/nr-p3.webp);
+    background-size: fill;
+    background-repeat: no-repeat;
+    min-height: 59vh;
+}
+
+.g-1
+{
+    grid-area: 2/1/2/3;
+}
