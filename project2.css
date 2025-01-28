@@ -1,0 +1,8 @@
+/* CSS for Project-2 Page */
+
+.ps-center
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
