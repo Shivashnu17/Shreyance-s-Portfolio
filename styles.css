@@ -703,7 +703,11 @@ p{
   justify-content: center;
   flex-direction: column;
   padding: 5% 0;
-  background-image: url(./imgs/temp.jpg);
+}
+
+.proj1-pics
+{
+  background-image: url(./imgs/Project-1/proj1-pics-bg.jpg);
   background-size: contain;
 }
 
@@ -763,7 +767,7 @@ p{
 /*  */
 .proj-title
 {
-  min-height: 60vh;
+  /* min-height: 60vh; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -973,7 +977,6 @@ p{
 .p2-pt1
 {
   font-size: 70px;
-  color: whitesmoke;
   text-align: center;
   padding-top: 2%;
 }
@@ -998,4 +1001,27 @@ p{
   width: 100%;
   position: relative;
   bottom: 200px;
+}
+
+.proj2-pics
+{
+  background-image: url(./imgs/Project-2/covers-images/CTB\ BACKGROUND\ 2.webp);
+  background-size: contain;
+}
+
+.body-pj2
+{
+  background-image: url(./imgs/Project-2/covers-images/CTB\ BACKGROUND.webp);
+  background-size: contain;
+  color: black;
+}
+
+.body-pj2 .title-img-cont
+{
+  background-color: #d4cec2;
+}
+
+.tic-cont
+{
+  display: block;
 }
