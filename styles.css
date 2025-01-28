@@ -118,10 +118,8 @@
 body
 {
   /* background-image: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%); */
-  /* background-color: rgb(10, 14, 22); */
-  background-color: rgb(184, 184, 184);
+  background-color: rgb(10, 14, 22);
   height: 100vh;
-  /* padding: 1% 10%; */
   font-family: myFontNormal;
   font-weight: 200;
   color: white;
