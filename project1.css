@@ -1,0 +1,77 @@
+body
+{
+    background-color: rgb(10, 14, 22);
+    color: white;
+}
+
+/* Title section */
+.p1h-txt
+{
+  padding: 5px 0;
+}
+
+.ti-1
+{
+  background-image: url(./imgs/Project-1/pro1-home.webp);
+  background-size: cover;
+}
+
+/* Narrow Video */
+
+.nr-vid-cont
+{
+  width: 100%;
+  min-height: 50vh;
+  max-height: 65vh;
+  background-color: white;
+  overflow: hidden;
+  opacity: 75%;
+}
+
+.nr-vid
+{
+  filter: grayscale(100%);
+}
+
+/* Pictures Section */
+
+.proj1-pics
+{
+  background-image: url(./imgs/Project-1/proj1-pics-bg.jpg);
+  background-size: contain;
+}
+
+/* P1 Cards Section */
+
+.p1-cards-cont
+{
+  display: flex;
+  flex-direction: column;
+  padding: 5% 15%;
+  gap: 50px;
+}
+
+.p1-cards-cont span
+{
+  display: flex;
+  gap: 50px;
+}
+
+.p1-card{
+  background-color: rgb(250, 250, 250, 0.2);
+  padding: 2% 2%;
+  border-radius: 20px;
+  height: 200px;
+  border: rgb(255, 255, 255, 0.3) 2px solid;
+}
+
+.card-heading
+{
+  padding-bottom: 20px;
+  font-size: 28px;
+}
+
+.card-info
+{
+  color: rgb(241, 241, 241);
+}
