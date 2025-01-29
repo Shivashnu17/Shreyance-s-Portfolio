@@ -1,5 +1,17 @@
 /* CSS file for Print Media Page */
 
+@keyframes down-appear
+{
+  from
+  {
+    transform: translateY(200px);
+  }
+  to
+  {
+    transform: translateY(0px);
+  }
+}
+
 .hero
 {
     display: flex;
@@ -11,7 +23,12 @@
 
 .hero-txt-cont
 {
-    width: 350px;
+    width: 355px;
+}
+
+.hero-txt-cont-ex
+{
+  width: 361px;
 }
 
 .hero-title
@@ -26,7 +43,7 @@
 .pm-p
 {
     letter-spacing: 0.2em;
-    line-height: 1.7em;
+    /* line-height: 1.7em; */
     font-size: 13px;
     margin-top: 10px;
 }
@@ -36,6 +53,7 @@
 .works
 {
     padding: 10% 15%;
+    position: relative;
 }
 
 .pm-grid
@@ -52,9 +70,22 @@
 {
     width: 100%;
     height: 100%;
-    /* animation: down-appear linear;
+
+    animation: down-appear linear;
     animation-timeline: view();
-    animation-range: entry 0% cover 10%; */
+    animation-range: entry 0% cover 30%;
+}
+
+/* Vertical Grid */
+
+.pm-grid-ver
+{
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    object-fit: contain;
 }
 
 
@@ -65,111 +96,103 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 50px 0;
+    padding: 20px 0 100px 0;
 }
 
-/* From Uiverse.io by cssbuttons-io */ 
-.fancy {
-    background-color: transparent;
-    border: 2px solid #000;
-    border-radius: 0;
-    box-sizing: border-box;
-    color: #fff;
-    cursor: pointer;
-    display: inline-block;
-    float: right;
-    font-weight: 700;
-    letter-spacing: 0.05em;
-    margin: 0;
-    outline: none;
-    overflow: visible;
-    padding: 1.25em 2em;
+/* From Uiverse.io by TISEPSE */ 
+.btn2 {
     position: relative;
-    text-align: center;
-    text-decoration: none;
-    text-transform: none;
-    transition: all 0.3s ease-in-out;
-    user-select: none;
-    font-size: 13px;
-   }
-   
-   .fancy::before {
-    content: " ";
-    width: 1.5625rem;
-    height: 2px;
-    background: black;
-    top: 50%;
-    left: 1.5em;
-    position: absolute;
-    transform: translateY(-50%);
-    transform-origin: center;
-    transition: background 0.3s linear, width 0.3s linear;
-   }
-   
-   .fancy .text {
-    font-size: 1.125em;
-    line-height: 1.33333em;
-    padding-left: 2em;
-    display: block;
-    text-align: left;
-    transition: all 0.3s ease-in-out;
+    display: inline-block;
+    padding: 10px 10px;
+    border: 2px solid #000000;
     text-transform: uppercase;
+    color: #000000;
     text-decoration: none;
-    color: black;
-   }
-   
-   .fancy .top-key {
-    height: 2px;
-    width: 1.5625rem;
+    font-weight: 400;
+    font-size: 10px;
+    transition: 0.3s;
+  }
+  
+  .btn2::before {
+    content: '';
+    position: absolute;
     top: -2px;
-    left: 0.625rem;
-    position: absolute;
-    background: #e8e8e8;
-    transition: width 0.5s ease-out, left 0.3s ease-out;
-   }
-   
-   .fancy .bottom-key-1 {
-    height: 2px;
-    width: 1.5625rem;
-    right: 1.875rem;
-    bottom: -2px;
-    position: absolute;
-    background: #e8e8e8;
-    transition: width 0.5s ease-out, right 0.3s ease-out;
-   }
-   
-   .fancy .bottom-key-2 {
-    height: 2px;
-    width: 0.625rem;
-    right: 0.625rem;
-    bottom: -2px;
-    position: absolute;
-    background: #e8e8e8;
-    transition: width 0.5s ease-out, right 0.3s ease-out;
-   }
-   
-   .fancy:hover {
-    color: white;
-    background: black;
-   }
-   
-   .fancy:hover::before {
-    width: 0.9375rem;
-    background: white;
-   }
-   
-   .fancy:hover .text {
-    color: white;
-    padding-left: 1.5em;
-   }
-   
-   .fancy:hover .top-key {
     left: -2px;
-    width: 0px;
-   }
-   
-   .fancy:hover .bottom-key-1,
-    .fancy:hover .bottom-key-2 {
-    right: 0;
-    width: 0;
-   }
+    width: calc(100% + 4px);
+    height: calc(100% - -2px);
+    background-color: #ffffff;
+    transition: 0.3s ease-out;
+    transform: scaleY(1);
+  }
+  
+  .btn2::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% - 50px);
+    background-color: #ffffff;
+    transition: 0.3s ease-out;
+    transform: scaleY(1);
+  }
+  
+  .btn2:hover::before {
+    transform: translateY(-25px);
+    height: 0;
+  }
+  
+  .btn2:hover::after {
+    transform: scaleX(0);
+    transition-delay: 0.15s;
+  }
+  
+  .btn2:hover {
+    border: 2px solid #000000;
+  }
+  
+  .btn2 span {
+    position: relative;
+    z-index: 3;
+  }
+  
+  .wid-btn
+  {
+    text-decoration: none;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    margin-top: auto;
+  }
+
+  .mkt-btn
+  {
+    margin-left: auto;
+  }
+
+/* Fashion Films */
+
+.ff-cont
+{
+    padding: 5% 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.ff
+{
+    display: flex;
+    gap: 50px;
+}
+
+.ff-title
+{
+    letter-spacing: 0.25em;
+}
+
+.ff-vid
+{
+    height: 100%;
+    width: 100%;
+}

@@ -4,6 +4,12 @@ body
     color: black;
 }
 
+/* .pro-info:hover
+{
+    transition: 1s;
+    background-color: aqua;
+} */
+
 .nr-pic-cont
 {
     background-image: url(./imgs/Project-3/nr-p3.webp);
@@ -15,4 +21,10 @@ body
 .g-1
 {
     grid-area: 2/1/2/3;
+}
+
+.bottom-app:hover
+{
+    transition: 1s;
+    scale: 0.9;
 }
