@@ -1,13 +1,21 @@
 :root
 {
-  --nav-color: white;
-  --inverted-color: black;
+  --nav-color: black;
+  --page-color: black;
+  --inverted-color: white;
 }
 
 body
 {
-    background-color: rgb(10, 14, 22);
-    color: orange;
+    background-color: white;
+    color: --page-color;
+}
+
+/* Side Bar */
+
+.side-bar a
+{
+  font-size: 14px;
 }
 
 /* Title section */
@@ -36,6 +44,15 @@ body
 .nr-vid
 {
   filter: grayscale(100%);
+}
+
+/*  */
+.g-l
+{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 0 5% 0;
 }
 
 /* Pictures Section */

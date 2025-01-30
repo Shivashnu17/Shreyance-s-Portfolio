@@ -2,14 +2,14 @@
 
 :root
 {
-    --nav-color: black;
+    --nav-color: rgb(0, 0, 0);
     --inverted-color: white;
     --page-color: grey;
 }
 
 body
 {
-    background-color: rgb(141, 203, 206);
+    background-color: rgb(255, 255, 255);
     color: var(--page-color);
 }
 
@@ -19,12 +19,22 @@ body
     text-align: center;
 }
 
+.title-img
+{
+    padding: 0 15%;
+}
+
+.nr-pic-cont
+{
+    opacity: 100%;
+}
+
 .ps-center
 {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10% 0;
+    padding: 10% 10%;
 }
 
 /* Photo Slider */
