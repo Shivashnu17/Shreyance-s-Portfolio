@@ -3,9 +3,10 @@
   --nav-color: white;
   --inverted-color: black;
   --page-color : black;
+  --subheading: rgb(50, 50, 50);
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://aonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
 
 @keyframes appear
 {
@@ -100,28 +101,16 @@
   scroll-behavior: smooth;
 }
 
-@font-face
-{
-  font-family: myFontNormal;
-  src: url(./fonts/ITC\ Avant\ Garde\ CE\ Gothic\ Book\(1\).ttf)
-}
-
-@font-face
-{
-  font-family: myFontBold;
-  src: url(./fonts/ITC\ Avant\ Garde\ Gothic\ LT\ Bold.ttf);
-}
-
-@font-face
-{
-  font-family: myFontDemi;
-  src: url(./fonts/ITC\ Avant\ Garde\ Gothic\ LT\ Demi.ttf);
+.figtree-fnt {
+  font-family: "Figtree", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
 }
 
 body
 {
-  font-family: myFontNormal;
-  font-weight: 200;
+  font-family: "Figtree", serif;
 }
 
 a
@@ -165,7 +154,7 @@ ul
   padding: 1% 2%;
   background-color: transparent;
   cursor: pointer;
-  border: 2px solid var(--nav-color);
+  border: 1px solid var(--subheading);
   overflow: hidden;
   border-radius: 30px;
   color: var(--nav-color);
@@ -385,6 +374,7 @@ ul
 
 .proj-heading
 {
+  font-weight: 500;
   color: var(--page-color);
   font-size: 28px;
   /* grid-area: 1/1/3/1; */
@@ -409,7 +399,7 @@ ul
 
 .grid-title
 {
-  font-family: myFontBold;
+  /* font-family: myFontBold; */
 }
 
 /* Gallery */
@@ -507,6 +497,9 @@ ul
 
 .pic-title
 {
+  text-transform: uppercase;
+  font-weight: 500;
+  color: white;
   padding: 5% 0 3% 0;
   font-size: 60px;
 }
@@ -565,7 +558,8 @@ ul
 
 .pt1
 {
-  font-size: 115px;
+  font-size: 100px;
+  font-weight: 500;
   color: var(--page-color);
   text-align: center;
   padding-top: 2%;
@@ -603,14 +597,18 @@ ul
 
 .p2-pt1
 {
-  font-size: 70px;
+  font-size: 50px;
+  font-weight: 500;
+  color: #342624;
   text-align: center;
   padding-top: 2%;
 }
 
 .pt-2
 {
-  font-size: 125px;
+  font-size: 100px;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 
 .nr-pic-cont
@@ -670,4 +668,10 @@ ul
 .proj-list
 {
   width: 250px;
+  font-weight: 300;
+}
+
+.mv-txt
+{
+  font-weight: 300;
 }

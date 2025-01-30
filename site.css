@@ -2,13 +2,15 @@
 
 :root
 {
-  --page-color : white;
+  --page-color : black;
+  --nav-color: black;
+  --subheading: rgb(50, 50, 50);
 }
 
 body
 {
   /* background-color: rgb(10, 14, 22); */
-  background-color: black;
+  background-color: white;
   color: var(--page-color);
 }
 
@@ -17,6 +19,7 @@ body
 .menu-name
 {
   font-size: 22px;
+  font-weight: 400;
   letter-spacing: 1px;
 }
 
@@ -60,7 +63,7 @@ body
 .blob
 {
   position: absolute;
-  top: 50;
+  top: 15%;
   width: 600px;
   height: 400px;
 }
@@ -74,14 +77,12 @@ body
   background-color: white;
   color: transparent;
   -webkit-background-clip: text;
-  mix-blend-mode: difference;
+  /* mix-blend-mode: difference; */
 }
 
 .b-txt
 {
-  /* display: block; */
-  font-family: myFontBold;
-  font-weight: lighter;
+  font-weight: 550;
   text-align: center;
   background-image: linear-gradient(#e66465, #9198e5);
   color: transparent;
@@ -104,15 +105,19 @@ body
 {
   color: var(--page-color);
   padding-bottom: 5%;
+  font-size: 25px;
+  font-weight: 500;
+  color: var(--subheading);
 }
 
 .abt-txt
 {
   font-size: 64px;
-  font-weight: 600;
+  font-weight: 500;
   /* color: whitesmoke; */
-  color: hsl(0 0% 100% /0.3);
-  background-image: linear-gradient(90deg, red, blue);
+  /* color: hsl(0 0% 100% /0.3); */
+  background-image: linear-gradient(90deg, #c72c41, #c72c41);
+  /* background-color: #c72c41; */
   background-clip: text;
   background-size: 0% 100%;
   background-repeat: no-repeat;
@@ -131,9 +136,10 @@ body
 .wid-title
 {
   font-size: 20px;
-  color: var(--page-color);
+  color: var(--subheading);
   margin-bottom: 3%;
   padding-left: 10%;
+  font-weight: 500;
 }
 
 .wid-list
@@ -153,6 +159,8 @@ body
   padding: 1% 0 1% 10%;
   cursor: pointer;
 
+  font-weight: 500;
+
   background-position: right;
 
   animation: left-appear linear;
@@ -162,11 +170,8 @@ body
 
 .wl-item:hover
 {
-  /* color: black; */
-  /* background-color: #eb5939; */
-  /* transition: background-color 1500ms cubic-bezier(.25, 1, .30, 1); */
-
-  background: linear-gradient(to right, #eb5939 50%,  rgb(10, 14, 22) 50%)  left;
+  color: white;
+  background: linear-gradient(to right, #c72c41 50%,  white 50%)  left;
   background-size: 200%;
   transition: 1s ease-out;
 }
@@ -186,6 +191,7 @@ body
 {
   /* display: inline; */
   font-size: 150px;
+  font-weight: 500;
 }
 
 .bnr-l
@@ -193,6 +199,7 @@ body
   animation: left-appear linear;
   animation-timeline: view();
   animation-range: entry 0% cover 50%;
+  /* color: ; */
 }
 
 .bnr-r
@@ -211,6 +218,7 @@ body
   align-items: center;
   justify-content: center;
   gap: 100px;
+  padding: 10% 0;
 
   position: relative;
   max-width: 48rem;
@@ -225,6 +233,8 @@ body
   opacity: 80%;
   transition: transform 1s;
   color: var(--page-color);
+
+  
 }
 
 .pro:hover
@@ -238,6 +248,9 @@ body
   display: flex;
   overflow-x: auto;
   border-radius: 0.5rem;
+  -webkit-box-shadow: 0px 1px 5px 2px rgba(42, 42, 42, 0.75);
+-moz-box-shadow: 0px 1px 5px 2px rgba(42, 42, 42, 0.75);
+box-shadow: 0px 1px 5px 1px rgba(42, 42, 42, 0.75);
 }
 
 .pro-img
@@ -249,10 +262,15 @@ body
 
 .pro-title
 {
-  font-family: myFontDemi;
+  /* font-family: myFontDemi; */
   font-size: 24px;
   padding: 5px 0;
   font-weight: 500;
+}
+
+.main-pro-info
+{
+  font-weight: 300;
 }
 
 /* Hero */
@@ -260,7 +278,7 @@ body
 .hero
 {
   /* text-align: center; */
-  font-family: myFontNormal;
+  /* font-family: myFontNormal; */
   font-weight: 100;
   font-size: 26px;
 
@@ -292,7 +310,7 @@ body
 {
   font-size: 115px;
   color: var(--page-color);
-  font-family: myFontBold;
+  /* font-family: myFontBold; */
   font-weight: 700;
 }
 

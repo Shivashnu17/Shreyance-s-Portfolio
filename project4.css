@@ -4,7 +4,7 @@
 {
     --nav-color: rgb(0, 0, 0);
     --inverted-color: white;
-    --page-color: grey;
+    --page-color: black;
 }
 
 body
@@ -17,6 +17,8 @@ body
 {
     font-size: 100px;
     text-align: center;
+    font-weight: 500;
+    color: #21395c;
 }
 
 .title-img

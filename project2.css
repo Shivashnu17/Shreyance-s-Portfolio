@@ -19,3 +19,9 @@ body
     align-items: center;
     justify-content: center;
 }
+
+.pt-2
+{
+  font-weight: 500;
+  color: #342624;
+}
