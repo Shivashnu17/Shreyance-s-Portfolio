@@ -1,7 +1,13 @@
+:root
+{
+    --nav-color: black;
+    --inverted-color: white;
+}
+
 body
 {
     background-color: rgb(198, 196, 196);
-    color: black;
+    color: var(--page-color);
 }
 
 /* .pro-info:hover

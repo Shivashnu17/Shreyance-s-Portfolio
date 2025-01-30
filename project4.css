@@ -1,5 +1,18 @@
 /* CSS for Project 4 */
 
+:root
+{
+    --nav-color: black;
+    --inverted-color: white;
+    --page-color: grey;
+}
+
+body
+{
+    background-color: rgb(141, 203, 206);
+    color: var(--page-color);
+}
+
 .pt-4
 {
     font-size: 100px;

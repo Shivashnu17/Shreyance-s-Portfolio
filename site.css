@@ -1,9 +1,14 @@
 /* CSS file for index.html */
 
+:root
+{
+  --page-color : white;
+}
+
 body
 {
-    background-color: rgb(10, 14, 22);
-    color: white;
+  background-color: rgb(10, 14, 22);
+  color: var(--page-color);
 }
 
 /* Blob */
@@ -31,7 +36,7 @@ body
   filter: blur(50px);
 }
 
-p{
+.p-cont{
   background-color: white;
   color: transparent;
   -webkit-background-clip: text;
@@ -63,7 +68,7 @@ p{
 
 .abt-heading
 {
-  color: var(--hero-color);
+  color: var(--page-color);
   padding-bottom: 5%;
 }
 
@@ -92,7 +97,7 @@ p{
 .wid-title
 {
   font-size: 20px;
-  color: var(--sub-hero-color);
+  color: var(--page-color);
   margin-bottom: 3%;
   padding-left: 10%;
 }
@@ -108,7 +113,7 @@ p{
 .wl-item
 {
   font-size: 60px;
-  color: var(--hero-color);
+  color: var(--page-color);
   border: 1px solid rgba(255, 255, 255, 0.4);
   border-style: solid none;
   padding: 1% 0 1% 10%;
@@ -123,7 +128,7 @@ p{
 
 .wl-item:hover
 {
-  color: black;
+  /* color: black; */
   /* background-color: #eb5939; */
   /* transition: background-color 1500ms cubic-bezier(.25, 1, .30, 1); */
 
@@ -145,7 +150,7 @@ p{
 
 .pb
 {
-  display: inline;
+  /* display: inline; */
   font-size: 150px;
 }
 
@@ -153,14 +158,14 @@ p{
 {
   animation: left-appear linear;
   animation-timeline: view();
-  animation-range: entry 0% cover 40%;
+  animation-range: entry 0% cover 50%;
 }
 
 .bnr-r
 {
   animation: right-appear linear;
   animation-timeline: view();
-  animation-range: entry 0% cover 40%;
+  animation-range: entry 0% cover 50%;
 }
 
 /* Projects */
@@ -185,6 +190,7 @@ p{
   animation-range: entry 0% cover 30%;
   opacity: 80%;
   transition: transform 1s;
+  color: var(--page-color);
 }
 
 .pro:hover
@@ -239,7 +245,7 @@ p{
 {
   display: flex;
   flex-direction: column;
-  color: var(--sub-hero-color);
+  color: var(--page-color);
   display: inline-block;
 }
 
@@ -251,7 +257,7 @@ p{
 .hero-name
 {
   font-size: 115px;
-  color: var(--hero-color);
+  color: var(--page-color);
   font-family: myFontBold;
   font-weight: 700;
 }
@@ -268,7 +274,7 @@ p{
 {
   display: inline-block;
   background-color: rgb(255, 255, 255, 0.1);
-  color: var(--sub-hero-color);
+  color: var(--page-color);
   border-radius: 20px;
   padding: 5px 15px;
   text-align: center;
@@ -291,7 +297,6 @@ p{
 
 .gd-it
 {
-  background-color: white;
   border-radius: 10px;
 }
 

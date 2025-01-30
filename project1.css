@@ -1,7 +1,13 @@
+:root
+{
+  --nav-color: white;
+  --inverted-color: black;
+}
+
 body
 {
     background-color: rgb(10, 14, 22);
-    color: white;
+    color: orange;
 }
 
 /* Title section */
@@ -23,7 +29,6 @@ body
   width: 100%;
   min-height: 50vh;
   max-height: 65vh;
-  background-color: white;
   overflow: hidden;
   opacity: 75%;
 }
@@ -41,7 +46,7 @@ body
   background-position: 0 0;
   background-size: contain; */
   background:url('./imgs/Project-1/proj1-pics-bg.jpg') repeat 0 0 fixed;
-  background-color: rgba(181,30,35,255);
+  background-color: rgba(181,30,35);
   -moz-background-size: cover;
   background-size: contain;
 }
@@ -78,5 +83,5 @@ body
 
 .card-info
 {
-  color: rgb(241, 241, 241);
+  color: var(--page-color);
 }

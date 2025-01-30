@@ -1,5 +1,11 @@
 /* CSS file for Print Media Page */
 
+:root
+{
+  --nav-color: black;
+  --inverted-color: white;
+}
+
 @keyframes down-appear
 {
   from
