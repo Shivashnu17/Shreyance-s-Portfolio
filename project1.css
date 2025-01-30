@@ -37,7 +37,12 @@ body
 
 .proj1-pics
 {
-  background-image: url(./imgs/Project-1/proj1-pics-bg.jpg);
+  /* background-image: url(./imgs/Project-1/proj1-pics-bg.jpg);
+  background-position: 0 0;
+  background-size: contain; */
+  background:url('./imgs/Project-1/proj1-pics-bg.jpg') repeat 0 0 fixed;
+  background-color: rgba(181,30,35,255);
+  -moz-background-size: cover;
   background-size: contain;
 }
 

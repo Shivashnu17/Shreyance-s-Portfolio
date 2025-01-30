@@ -18,13 +18,25 @@ body
     min-height: 59vh;
 }
 
-.g-1
+/* .g-1
 {
     grid-area: 2/1/2/3;
+} */
+
+.bottom-app
+{
+    transition: transform 1s ease-out;
 }
 
 .bottom-app:hover
 {
-    transition: 1s;
-    scale: 0.9;
+    z-index: 5;
+    transform: scale(1.1);
+}
+
+.cs-txt
+{
+    text-align: center;
+    font-size: 50px;
+    text-decoration: underline;
 }
