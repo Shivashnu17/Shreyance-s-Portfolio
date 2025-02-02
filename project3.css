@@ -19,9 +19,10 @@ body
 .nr-pic-cont
 {
     background-image: url(./imgs/Project-3/nr-p3.webp);
-    background-size: fill;
+    background-size: cover;
+    background-position: 50%;
     background-repeat: no-repeat;
-    min-height: 59vh;
+    height: 59vh;
 }
 
 /* .g-1

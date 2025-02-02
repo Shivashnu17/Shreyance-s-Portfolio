@@ -23,6 +23,41 @@ body
   }
 }
 
+/* Menu */
+
+.menu-name
+{
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: black;
+}
+
+.menu-list
+{
+  list-style-type: none;
+}
+
+.menu-list li
+{
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.menu-list li a
+{
+  display: inline-block;
+  color: var(--nav-color);
+  opacity: 40%;
+  transition: 0.5s;
+}
+
+.menu-list li a:hover
+{
+  opacity: 100%;
+  transform: scale(1.2);
+}
+
 .hero
 {
     display: flex;
