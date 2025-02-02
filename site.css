@@ -131,6 +131,7 @@ body
 .wid-content
 {
   padding: 5%  0;
+  scroll-margin-top: 80px;
 }
 
 .wid-title
