@@ -262,7 +262,7 @@ ul
 
 .slider
 {
-    width: 1300px;
+    width: 1200px;
     max-width: 100vw;
     height: 700px;
     position: relative;
@@ -283,7 +283,7 @@ ul
 
 .list img
 {
-    width: 1300px;
+    width: 1200px;
     max-width: 100vw;
     height: 100%;
     object-fit: contain;
