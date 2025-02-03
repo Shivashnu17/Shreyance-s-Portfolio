@@ -139,6 +139,11 @@ body
     animation-range: entry 0% cover 30%;
 }
 
+.esp
+{
+  object-fit: contain;
+}
+
 /* Vertical Grid */
 
 .pm-grid-ver
