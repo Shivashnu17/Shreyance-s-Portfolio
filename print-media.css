@@ -126,6 +126,14 @@ body
 .pm-grid a
 {
   display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.pm-gd-it
+{
+  height: 100%;
+  width: 100%;
 }
 
 .pm-gd-img
@@ -137,11 +145,6 @@ body
     animation: down-appear linear;
     animation-timeline: view();
     animation-range: entry 0% cover 30%;
-}
-
-.esp
-{
-  object-fit: contain;
 }
 
 /* Vertical Grid */
