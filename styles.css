@@ -151,12 +151,12 @@ ul
 .button {
   height: 40px;
   width: auto;
-  padding: 1% 2%;
+  padding: 0% 1%;
   background-color: transparent;
   cursor: pointer;
-  border: 1px solid var(--subheading);
+  border: 1px solid grey;
   overflow: hidden;
-  border-radius: 30px;
+  border-radius: 0px;
   color: var(--nav-color);
   transition: all 0.5s ease-in-out;
   display: flex;
