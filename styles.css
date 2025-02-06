@@ -149,7 +149,7 @@ ul
 
 /* Button */
 .button {
-  height: 40px;
+  height: 30px;
   width: auto;
   padding: 0% 1%;
   background-color: transparent;
@@ -433,14 +433,14 @@ ul
 {
   animation: left-appear linear;
   animation-timeline: view();
-  animation-range: entry 0% cover 40%;
+  animation-range: entry 0% cover 45%;
 }
 
 .g-ri
 {
   animation: right-appear linear;
   animation-timeline: view();
-  animation-range: entry 0% cover 40%;
+  animation-range: entry 0% cover 45%;
 }
 
 .g-l
@@ -449,13 +449,13 @@ ul
   padding: 0% 20%;
 }
 
-.g-last
+/* .g-last
 {
   object-fit: contain;
   animation: down-appear linear;
   animation-timeline: view();
   animation-range: entry 0% cover 40%;
-}
+} */
 
 /* Gallery 2 */
 
