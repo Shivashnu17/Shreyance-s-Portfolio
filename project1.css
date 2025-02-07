@@ -30,6 +30,29 @@ body
   background-size: cover;
 }
 
+.ar-cont
+{
+  width: 40px;
+  position: absolute;
+  bottom: 1%;
+  background-color: rgb(208, 208, 208);
+  border-radius: 5px;
+  opacity: 50%;
+  transition: 0.5s;
+  padding: 0.5%;
+  line-height: 0;
+}
+
+.ar-cont:hover
+{
+  opacity: 100%;
+}
+
+.ar-cont img
+{
+  width: 100%;
+}
+
 /* Narrow Video */
 
 .nr-vid-cont
