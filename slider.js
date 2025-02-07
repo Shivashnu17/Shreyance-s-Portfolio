@@ -45,12 +45,12 @@ function reloadSlider(){
 
 }
 
-dots.forEach((list, key) => {
-    list.addEventListener('click', function() {
-        active=key;
-        reloadSlider();
-    })
-})
+// dots.forEach((list, key) => {
+//     list.addEventListener('click', function() {
+//         active=key;
+//         reloadSlider();
+//     })
+// })
 
 
 // SECOND SLIDESHOW
@@ -95,4 +95,4 @@ dots2.forEach((list2, key) => {
         active2=key;
         reloadSlider2();
     })
-})
+});
